@@ -78,6 +78,7 @@ a:link {
 
 .pinstruments-app {
 	background-image:url("../img/pinstruments-app.jpg");
+	background-position: center center;
 }
 
 .bench-app {
