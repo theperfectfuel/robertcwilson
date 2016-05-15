@@ -39,17 +39,18 @@
 		
 		<div id="main-content">
 
-			<div class="pure-g tags">
+			<div id="projects" class="pure-g tags">
 				<div class="pure-u-1">
 					<ul>
-						<li><a href="" name="tag-all" class="tag">All</a></li>
-						<li><a href="" name="tag-jquery" class="tag tag-jquery">jQuery</a></li>
-						<li><a href="" name="tag-angular" class="tag tag-jquery">Angular</a></li>
-						<li><a href="" name="tag-node" class="tag tag-jquery">Node</a></li>
-						<li><a href="" name="tag-aws" class="tag tag-jquery">AWS</a></li>
-						<li><a href="" name="tag-mean" class="tag tag-jquery">MEAN</a></li>
-						<li><a href="" name="tag-rails" class="tag tag-jquery">Rails</a></li>
-						<li><a href="" name="tag-postgresql" class="tag tag-jquery">PostgreSQL</a></li>
+						<li><a href="#projects" name="tag-all" class="tag">All</a></li>
+						<li><a href="#projects" name="tag-jquery" class="tag tag-jquery">JQUERY</a></li>
+						<li><a href="#projects" name="tag-angular" class="tag tag-angular">ANGULAR</a></li>
+						<li><a href="#projects" name="tag-node" class="tag tag-node">NODE</a></li>
+						<li><a href="#projects" name="tag-aws" class="tag tag-aws">AWS</a></li>
+						<li><a href="#projects" name="tag-mean" class="tag tag-mean">MEAN</a></li>
+						<li><a href="#projects" name="tag-rails" class="tag tag-rails">RAILS</a></li>
+						<li><a href="#projects" name="tag-python" class="tag tag-python">PYTHON</a></li>
+						<li><a href="#projects" name="tag-postgresql" class="tag tag-postgresql">POSTGRESQL</a></li>
 					</ul>
 				</div>
 			</div>
@@ -57,13 +58,15 @@
 
 			<div class="pure-g filters">
 
-				<div class="project beer-app proj-jquery proj-mean pure-u-1 pure-u-md-1-2">
+				<div class="project beer-app proj-jquery proj-mean proj-angular proj-node pure-u-1 pure-u-md-1-2">
 					<a href="http://www.sharedbrew.com" target="_blank">
 						<div class="project-info">
 							<h1>SharedBrew</h1>
-							- Social Recipe Book / Shopping List app for the home brewing community.<br />
-							- Users can create and share recipes, then create shopping lists from them.<br />
-							- Initially using Firebase, this project was refactored into a full MEAN stack.
+							<ul>
+								<li>Social Recipe Book / Shopping List app for the home brewing community.</li>
+								<li>Users can create and share recipes, then create shopping lists from them.</li>
+								<li>Initially using Firebase, this project was refactored into a full MEAN stack.</li>
+							</ul>
 						</div>
 					</a>
 				</div>
@@ -72,20 +75,24 @@
 					<a href="http://theperfectfuel.github.io/music-time-warp/" target="_blank">
 						<div class="project-info">
 							<h1>Music Time Warp</h1>
-							- Pulls data from the Echo Nest API to display bands as geocoded map points over time.  <br />
-							- Select a decade, and pins drop on the city that a band was from during that time. <br />
-							- Built with jQuery, using Bourbon / Neat for layout.
+							<ul>
+								<li>Pulls data from the Echo Nest API to display bands as geocoded map points over time.</li>
+								<li>Select a decade, and pins drop on the city that a band was from during that time.</li>
+								<li>Built with jQuery, using Bourbon / Neat for layout.</li>
+							</ul>
 						</div>
 					</a>
 				</div>
 
-				<div class="project boxmapper-app proj-jquery pure-u-1 pure-u-md-1-2">
+				<div class="project boxmapper-app proj-python proj-postgresql pure-u-1 pure-u-md-1-2">
 					<a href="http://boxmapper.com/" target="_blank">
 						<div class="project-info">
 							<h1>Boxmapper</h1>
-							- Yelp style application designed for the fitness community.<br />
-							- Provides detailed reviewing of CrossFit / MMA style gyms.<br />
-							- Built with Python / PostgreSQL and using Boostrap for layout.
+							<ul>
+								<li>Yelp style application designed for the fitness community.</li>
+								<li>Provides detailed reviewing of CrossFit / MMA style gyms.</li>
+								<li>Built with Python / PostgreSQL and using Boostrap for layout.</li>
+							</ul>
 						</div>
 					</a>
 				</div>
@@ -94,30 +101,36 @@
 					<a href="http://theperfectfuel.github.io/my-app-landingpage/site/index.html" target="_blank">
 						<div class="project-info">
 							<h1>Hockey Playground</h1>
-							- Hockey quiz / NHL video app pulling data from YouTube API.<br /> 
-							- Designed primarily to extract time from the lives of hockey fans.<br />
-							- Built primarily with jQuery, using Bourbon / Neat / Bitters for layout.
+							<ul>
+								<li>Hockey quiz / NHL video app pulling data from YouTube API.</li>
+								<li>Designed primarily to extract time from the lives of hockey fans.</li>
+								<li>Built primarily with jQuery, using Bourbon / Neat / Bitters for layout.</li>
+							</ul>
 						</div>
 					</a>
 				</div>
 
-				<div class="project pinstruments-app pure-u-1 pure-u-md-1-2">
+				<div class="project pinstruments-app proj-rails proj-postgresql proj-aws pure-u-1 pure-u-md-1-2">
 					<a href="http://pinstruments.herokuapp.com/" target="_blank">
 						<div class="project-info">
 							<h1>Pinstruments</h1>
-							- Pinboard style app for musicians and fans to oggle musical instruments. <br />
-							- Built with Ruby on Rails / PostgreSQL, and using Bootstrap on the front end.<br />
-							- Utilizes AWS S3 storage for the images.
+							<ul>
+								<li>Pinboard style app for musicians and fans to oggle musical instruments.</li>
+								<li>Built with Ruby on Rails / PostgreSQL, and using Bootstrap on the front end.</li>
+								<li>Utilizes AWS S3 storage for the images.</li>
+							</ul>
 						</div>
 					</a>
 				</div>
 
 				<div class="project bench-app pure-u-1 pure-u-md-1-2">
-					<a href="http://www.sharedbrew.com" target="_blank">
+					<a href="#">
 						<div class="project-info">
 							<h1>Danish Bench</h1>
-							- I refactored donated mahogany lumber for this Danish / Japanese style bench. <br />
-							- Danish cording is used throughout the application to enable users to "sit down". 
+							<ul>
+								<li>I refactored donated mahogany lumber for this Danish / Japanese style bench.</li>
+								<li>Danish cording is used throughout the application to enable users to "sit down".</li> 
+							</ul>
 						</div>
 					</a>
 				</div>
@@ -127,7 +140,32 @@
 		</div> <!-- closes main-content -->
 
 		<footer>
-
+			<div class="pure-g">
+				<div class="footer-inner pure-u-1 pure-u-md-1-3">
+					<div><h3>Stuff I love</h3></div>
+					<div>
+						<a href="https://youtu.be/AE1ct5yEuVY" target="_blank">
+							<img src="img/logo-target.png">
+						</a>
+					</div>
+				</div>
+				<div class="footer-inner pure-u-1 pure-u-md-1-3">
+					<div><h3>Get in touch</h3></div>
+					<div>
+						<a href="http://theperfectfuel.com/contact-us" target="_blank">
+							<img src="img/The-Perfect-Fuel-Logo.png">
+						</a>
+					</div>
+				</div>
+				<div class="footer-inner pure-u-1 pure-u-md-1-3">
+					<div><h3>Tech</h3></div>
+					<div>
+						<a href="https://en.wikipedia.org/wiki/Commodore_64" target="_blank">
+							<img src="img/Commodore-64-Computer-sm.png">
+						</a>
+					</div>
+				</div>
+			</div>
 		</footer> <!-- closes footer -->
 
 	</div> <!-- close main-container -->

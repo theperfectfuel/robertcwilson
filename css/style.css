@@ -5,13 +5,23 @@
 body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
-	background-color: #efefef;
+	background-color: #fff;
 }
 
 header {
 	min-height: 34em;
-	border-bottom: 2px solid #939d9e;
 
+}
+
+footer {
+	min-height: 20em;
+	background-color: #222;
+	color: white;
+}
+
+.footer-inner {
+	text-align: center;
+	padding-top: 2em;
 }
 
 a {
@@ -24,6 +34,9 @@ a:link {
 
 #main-content {
 	color: black;
+	max-width: 1280px;
+	background-color: white;
+	margin: 0 auto;
 }
 
 .header-title {
@@ -59,16 +72,17 @@ a:link {
 }
 
 .beer-app {
-	background-image:url("../img/beer-app.jpg");
+	background-image:url("../img/beer-app2.jpg");
 }
 
 .music-app {
-	background-image:url("../img/music-app.jpg");
+	background-image:url("../img/music-app2.jpg");
 }
 
 .boxmapper-app {
 	background-image:url("../img/boxmapper-app.jpg");
-	background-position: center center;
+	/*background-position: center center;*/
+	background-position: center;
 }
 
 .quiz-app {
@@ -77,12 +91,13 @@ a:link {
 }
 
 .pinstruments-app {
-	background-image:url("../img/pinstruments-app.jpg");
-	background-position: center center;
+	background-image:url("../img/pinstruments-app2.jpg");
+	/*background-position: center top;*/
+	background-position: center top;
 }
 
 .bench-app {
-	background-image:url("../img/danish-bench.jpg");
+	background-image:url("../img/danish-bench1.jpg");
 }
 
 .project {
@@ -123,7 +138,7 @@ a:link {
 
 .project:hover .project-info {
 	visibility: visible;
-	height: 70%;
+	height: 80%;
 	width: 80%;
 	padding: .5em;
 	margin: 1em auto;
@@ -135,8 +150,16 @@ a:link {
 	opacity: .8;
 }
 
+.project-info > ul {
+	padding-left: 1em;
+}
+
+.project-info >ul li {
+	padding-bottom: 8px;
+}
+
 .tags {
-	background-color: white;
+	background-color: #fff;
 }
 
 .tags ul {
@@ -148,28 +171,35 @@ a:link {
 .tags li {
 	display: inline-block;
 	background-color: white;
-	border: 2px solid black;
-	margin-bottom: 5px;
+	border-bottom: 2px solid black;
+	margin: 0 5px 5px;
 }
 
-.tags li:hover {
+.tags li:hover, .tags .active {
 	background-color: black;
 }
 
 .tags li a {
-	padding: .5em 1em;
+	padding: .5em .3em;
 	display: block;
+	font-family: 'Nothing You Could Do', cursive;
+	font-size: 1.2em;
+	font-weight: 600;
+	color: black;
 }
 
-.tags li a:hover {
+.tags li a:hover, .tags .active a {
 	color: white;
 }
 
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 760px) {
   .project h1 {
     font-size: 1.5em;
+  }
+  .footer-inner {
+  	border-bottom: 1px solid #ccc;
   }
 }
