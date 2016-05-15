@@ -63,7 +63,7 @@ a:link {
     background-attachment: scroll, scroll;
     background-clip: border-box, border-box;
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(rgba(0, 10, 60, 0.3), rgba(50, 50, 50, 0.8)), url("../img/plane-shaving-bg.jpg");
+    background-image: linear-gradient(rgba(0, 10, 60, 0.3), rgba(50, 50, 50, 0.8)), url("../img/plane-shaving-bg1.jpg");
     background-origin: padding-box, padding-box;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -80,13 +80,13 @@ a:link {
 }
 
 .boxmapper-app {
-	background-image:url("../img/boxmapper-app.jpg");
+	background-image:url("../img/boxmapper-bg.jpg");
 	/*background-position: center center;*/
 	background-position: center;
 }
 
 .quiz-app {
-	background-image:url("../img/quiz-app.jpg");
+	background-image:url("../img/hockey-quiz.jpg");
 	background-position: center;
 }
 
