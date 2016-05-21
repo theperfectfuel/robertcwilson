@@ -6,17 +6,16 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	background-color: #fff;
+	color: white;
 }
 
 header {
 	min-height: 34em;
-
 }
 
 footer {
 	min-height: 20em;
 	background-color: #222;
-	color: white;
 }
 
 .footer-inner {
@@ -55,7 +54,6 @@ a:link {
 	font-weight: 400;
 	text-align: center;
 	color: #efefef;
-	/* text-shadow: 0 2px 4px rgba(30, 40, 53, 0.75); */
 	text-shadow: 1px 1px 1px rgba(290, 310, 233, 0.65);
 	font-family: 'Nothing You Could Do', cursive;
 }
@@ -64,7 +62,7 @@ a:link {
     background-attachment: scroll, scroll;
     background-clip: border-box, border-box;
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(rgba(0, 10, 60, 0.3), rgba(50, 50, 50, 0.8)), url("../img/plane-shaving-bg1.jpg");
+    background-image: linear-gradient(rgba(0, 10, 60, 0.3), rgba(50, 50, 50, 0.8)), url('../img/plane-shaving-bg1.jpg');
     background-origin: padding-box, padding-box;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -73,46 +71,36 @@ a:link {
 }
 
 .beer-app {
-	background-image:url("../img/beer-app2.jpg");
+	background-image:url('../img/beer-app2.jpg');
 }
 
 .music-app {
-	background-image:url("../img/music-app2.jpg");
+	background-image:url('../img/music-app2.jpg');
 }
 
 .boxmapper-app {
-	background-image:url("../img/boxmapper-bg.jpg");
-	/*background-position: center center;*/
+	background-image:url('../img/boxmapper-bg.jpg');
 	background-position: center;
 }
 
 .quiz-app {
-	background-image:url("../img/hockey-quiz.jpg");
+	background-image:url('../img/hockey-quiz.jpg');
 	background-position: center;
 }
 
 .pinstruments-app {
-	background-image:url("../img/pinstruments-app2.jpg");
-	/*background-position: center top;*/
+	background-image:url('../img/pinstruments-app2.jpg');
 	background-position: center top;
 }
 
 .bench-app {
-	background-image:url("../img/danish-bench1.jpg");
+	background-image:url('../img/danish-bench1.jpg');
 }
 
 .project {
 	height: 30em;
 	padding: 0 1em;
 	border: 4px solid #fff;
-}
-
-.project:hover {
-	/*background-color: black;
-	opacity: .1;
-	color: black;*/
-	/*background-position: 0 -100%;*/
-	/*background-image: linear-gradient(to bottom, #ccc 50%, #ccc 50%);*/
 }
 
 .project h1 {
@@ -122,7 +110,6 @@ a:link {
 }
 
 .project .project-info {
-	/*visibility: hidden;*/
 	height: 80%;
 	width: 80%;
 	padding: .5em;
@@ -139,7 +126,6 @@ a:link {
 }
 
 .project:hover .project-info {
-	/*visibility: visible;*/
 	height: 80%;
 	width: 80%;
 	padding: .5em;
@@ -205,7 +191,6 @@ a:link {
 	padding: 0 50px;
 }
 
-
 @media (max-width: 960px) {
 	.project h1 {
 		font-size: 1.3em;
@@ -222,5 +207,4 @@ a:link {
 		font-size: 1.2em;
 		line-height: 1.1em;
 	}
-
 }
