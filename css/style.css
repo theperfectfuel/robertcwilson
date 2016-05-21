@@ -18,6 +18,10 @@ footer {
 	background-color: #222;
 }
 
+footer h3 {
+	font-weight: 300;
+}
+
 .footer-inner {
 	text-align: center;
 	padding-top: 2em;
@@ -46,7 +50,7 @@ a:link {
 	padding: 2em;
 	color: #efefef;
 	text-shadow: 1px 1px 1px rgba(290, 310, 233, 0.65);
-	font-family: 'Nothing You Could Do', cursive;
+	font-family: 'Nothing You Could Do', sans-serif;
 }
 
 .header-subtitle {
@@ -55,7 +59,7 @@ a:link {
 	text-align: center;
 	color: #efefef;
 	text-shadow: 1px 1px 1px rgba(290, 310, 233, 0.65);
-	font-family: 'Nothing You Could Do', cursive;
+	font-family: 'Nothing You Could Do', sans-serif;
 }
 
 .tinted-image {
@@ -95,6 +99,12 @@ a:link {
 
 .bench-app {
 	background-image:url('../img/danish-bench1.jpg');
+}
+
+.project-heading {
+	text-align: center;
+	font-size: 2em;
+	margin: 2em 0 1em 0;
 }
 
 .project {
@@ -173,9 +183,10 @@ a:link {
 .tags li a {
 	padding: .5em .3em;
 	display: block;
-	font-family: 'Nothing You Could Do', cursive;
+	/*font-family: 'Nothing You Could Do', cursive;*/
+	font-family: 'Raleway', sans-serif;
 	font-size: 1.2em;
-	font-weight: 600;
+	font-weight: 300;
 	color: black;
 }
 
