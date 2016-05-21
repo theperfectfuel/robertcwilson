@@ -183,7 +183,6 @@ a:link {
 .tags li a {
 	padding: .5em .3em;
 	display: block;
-	/*font-family: 'Nothing You Could Do', cursive;*/
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.2em;
 	font-weight: 300;
@@ -199,7 +198,8 @@ a:link {
 }
 
 .project-links span {
-	padding: 0 50px;
+	padding: 0 22px;
+	margin: 0 auto;
 }
 
 @media (max-width: 960px) {
@@ -207,15 +207,27 @@ a:link {
 		font-size: 1.3em;
 	}
 
+	.project-links a {
+		margin: 12px;
+		display: inline-block;
+	}
+
 	.footer-inner {
 		border-bottom: 1px solid #333;
 		padding: 2em 0;
 	}
 
-	.project:hover .project-info {
+	.project .project-info, .project:hover .project-info {
 		height: 85%;
 		width: 85%;
 		font-size: 1.2em;
 		line-height: 1.1em;
 	}
+
+	/*.project:hover .project-info {
+		height: 85%;
+		width: 85%;
+		font-size: 1.2em;
+		line-height: 1.1em;
+	}*/
 }
