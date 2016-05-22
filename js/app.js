@@ -56,5 +56,9 @@ $(document).ready(function() {
 	    $(this).closest('li').addClass('active');
 	});
 
+	$('.project-info').click(function() {
+		(this).fadeIn();
+	});
+
 
 });
