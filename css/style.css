@@ -27,9 +27,19 @@ footer h3 {
 	padding-top: 2em;
 }
 
+.pure-g {
+	margin-bottom: 10px;
+	padding: 20px 0 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+footer .pure-g {
+	border-bottom: none;
+}
+
 a {
 	outline: 0;
-	color: white;
+	color: black;
 }
 
 a:link {
@@ -103,20 +113,23 @@ a:link {
 
 .project-heading {
 	text-align: center;
-	font-size: 2em;
-	margin: 2em 0 1em 0;
+	font-size: 2.3em;
+	margin: 2.2em 0 2em 0;
+	border-bottom: 1px solid #ddd;
 }
 
 .project {
 	height: 30em;
 	padding: 0 1em;
 	border: 4px solid #fff;
+	box-shadow: 2px 2px 2px #ddd;
 }
 
-.project h1 {
+.project-info h1 {
 	text-align: center;
 	font-size: 1.6em;
 	line-height: 1em;
+	font-weight: 400;
 }
 
 .project .project-info {
@@ -126,71 +139,18 @@ a:link {
 	margin: 1em auto;
 	background-color: black;
 	background-position: center center;
-	color: white;
+	color: black;
 	font-size: 1.2em;
 	line-height: 1.2em;
-	opacity: 0;
-	transition: opacity 0.5s;
-	-moz-transition: opacity 0.5s;
-	-webkit-transition: opacity 0.5s;
-}
-
-.project:hover .project-info {
-	height: 80%;
-	width: 80%;
-	padding: .5em;
-	margin: 1em auto;
-	background-color: black;
-	background-position: center center;
-	color: white;
-	font-size: 1.2em;
-	line-height: 1.2em;
-	opacity: .8;
-	transition: opacity 0.5s;
-	-moz-transition: opacity 0.5s;
-	-webkit-transition: opacity 0.5s;
+	opacity: 1;
 }
 
 .project-info > ul {
-	padding-left: 1em;
+	padding: 0 1em 0 2em;
 }
 
 .project-info >ul li {
 	padding-bottom: 8px;
-}
-
-.tags {
-	background-color: #fff;
-}
-
-.tags ul {
-	text-align: center;
-	padding: 0px;
-	list-style-type: none;
-}
-
-.tags li {
-	display: inline-block;
-	background-color: white;
-	border-bottom: 2px solid black;
-	margin: 0 5px 5px;
-}
-
-.tags li:hover, .tags .active {
-	background-color: black;
-}
-
-.tags li a {
-	padding: .5em .3em;
-	display: block;
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.2em;
-	font-weight: 300;
-	color: black;
-}
-
-.tags li a:hover, .tags .active a {
-	color: white;
 }
 
 .project-links {
@@ -202,7 +162,11 @@ a:link {
 	margin: 0 auto;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 760px) {
+	.pure-g {
+		letter-spacing: normal;
+	}
+
 	.project h1 {
 		font-size: 1.3em;
 	}
@@ -217,17 +181,11 @@ a:link {
 		padding: 2em 0;
 	}
 
-	.project .project-info, .project:hover .project-info {
+	.project .project-info {
 		height: 85%;
 		width: 85%;
 		font-size: 1.2em;
 		line-height: 1.1em;
 	}
 
-	/*.project:hover .project-info {
-		height: 85%;
-		width: 85%;
-		font-size: 1.2em;
-		line-height: 1.1em;
-	}*/
 }
