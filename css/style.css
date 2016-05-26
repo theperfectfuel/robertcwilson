@@ -162,6 +162,13 @@ a:link {
 	margin: 0 auto;
 }
 
+.project-links a:hover {
+	border-bottom: 1px solid black;
+	margin-bottom: -1px;
+	color: green;
+	font-weight: 500;
+}
+
 @media (max-width: 760px) {
 	.pure-g {
 		letter-spacing: normal;
