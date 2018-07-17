@@ -80,7 +80,7 @@ a:link {
     background-origin: padding-box, padding-box;
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     background-attachment: fixed;
 }
 
