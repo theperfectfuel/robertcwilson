@@ -81,7 +81,7 @@ a:link {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-attachment: fixed;
-    background-position: left;
+    background-position: left top;
 }
 
 .beer-app {
