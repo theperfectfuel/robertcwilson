@@ -22,7 +22,14 @@
 	<script type="text/javascript" src="js/app.js"></script>
 
 </head>
-<body>
+<body id="home">
+
+	<div id="navbar">
+		<a href="#home">Home</a>
+		<a href="#about">About</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
+	</div>
 
 	<div id="main-container">
 
@@ -32,10 +39,11 @@
 		
 		<div id="main-content">
 
-
+			<div id="about" class="id-padding"></div>
+			<div class="bio-heading">About Me</div>
 
 			<div class="bio-container">
-			<div class="bio-heading">About Me</div>
+
 				<div class="bio-info">
 					<p>
 						Learning. Getting stuck, being persistent...and learning. 
@@ -58,41 +66,64 @@
 				</div>
 			</div>
 
+			<div id="projects" class="id-padding"></div>
 			<div class="project-heading">Projects</div>
 
-
-			<div class="pure-g">
-
-				<div class="project beer-app pure-u-md-3-5 pure-u-1">
+			<div class="project-container">
+				<div class="project beer-app app-image">
 				</div>
-
-				<div class="pure-u-md-2-5 pure-u-1">
-					<div class="project-info">
-						<h1>SharedBrew</h1>
-						<ul>
-							<li>Social Recipe Book / Shopping List app for the home brewing community.</li>
-							<li>Users can create and share recipes, then create shopping lists from them.</li>
-							<li>Initially using Firebase, this project was refactored into a full MEAN stack.</li>
-						</ul>
-						<div class="project-links">
-							<span>
+				<div class="project-info">
+					<h1>SharedBrew</h1>
+					<ul>
+						<li>Social Recipe Book / Shopping List app for the home brewing community.</li>
+						<li>Users can create and share recipes, then create shopping lists from them.</li>
+						<li>Initially using Firebase, this project was refactored into a full MEAN stack.</li>
+					</ul>
+					<div class="project-links">
+						<span>
+							<button class="btn btn-site">
 								<a href="http://www.sharedbrew.com" target="_blank">Site</a>
-							</span> 
-							<span>
+							</button>
+						</span> 
+						<span>
+							<button class="btn btn-code">
 								<a href="https://github.com/theperfectfuel/MeanBeer" target="_blank">Code</a>
-							</span>
-						</div>
+							</button>
+						</span>
 					</div>
 				</div>
-
 			</div>
 
-			<div class="pure-g">
 
-				<div class="project quiz-app pure-u-md-3-5 pure-u-1">
+			<div class="project-container">
+				<div class="project story-app app-image">
 				</div>
+				<div class="project-info">
+					<h1>ReallySmallStories</h1>
+					<ul>
+						<li>Very short stories and pieces of literature based on Unsplash images chosen by the user.</li>
+						<li>Users can create and share stories, then read and upvote others.</li>
+						<li>Uses Node, Express, Handlebars, MongoDB, Travis CI, and hosted on Heroku.</li>
+					</ul>
+					<div class="project-links">
+						<span>
+							<button class="btn btn-site">
+								<a href="https://tranquil-wave-94956.herokuapp.com/" target="_blank">Site</a>
+							</button>
+						</span> 
+						<span>
+							<button class="btn btn-code">
+								<a href="https://github.com/theperfectfuel/reallysmallstories" target="_blank">Code</a>
+							</button>
+						</span>
+					</div>
+				</div>
+			</div>
 
-				<div class="pure-u-md-2-5 pure-u-1">
+
+			<div class="project-container">
+				<div class="project quiz-app app-image">
+				</div>
 					<div class="project-info">
 						<h1>Hockey Playground</h1>
 						<ul>
@@ -102,23 +133,22 @@
 						</ul>
 						<div class="project-links">
 							<span>
-								<a href="http://theperfectfuel.github.io/my-app-landingpage/site/index.html" target="_blank">Site</a>
+								<button class="btn btn-site">
+										<a href="http://theperfectfuel.github.io/my-app-landingpage/site/index.html" target="_blank">Site</a>
+								</button>
 							</span>
 							<span>
-								<a href="https://github.com/theperfectfuel/my-app-landingpage" target="_blank">Code</a>
+								<button class="btn btn-code">
+										<a href="https://github.com/theperfectfuel/my-app-landingpage" target="_blank">Code</a>
+								</button>
 							</span>
 						</div>
 					</div>
-				</div>
-
 			</div>
 
-			<div class="pure-g">
-
-				<div class="project pinstruments-app pure-u-md-3-5 pure-u-1">
+			<div class="project-container">
+				<div class="project pinstruments-app app-image">
 				</div>
-
-				<div class="pure-u-md-2-5 pure-u-1">
 					<div class="project-info">
 						<h1>Pinstruments</h1>
 						<ul>
@@ -128,37 +158,35 @@
 						</ul>
 						<div class="project-links">
 							<span>
-								<a href="http://pinstruments.herokuapp.com/" target="_blank">Site</a>
+								<button class="btn btn-site">
+									<a href="http://pinstruments.herokuapp.com/" target="_blank">Site</a>
+								</button>
 							</span>
 							<span>
-								<a href="https://github.com/theperfectfuel/pinstruments" target="_blank">Code</a>
+								<button class="btn btn-code">
+									<a href="https://github.com/theperfectfuel/pinstruments" target="_blank">Code</a>
+								</button>
 							</span>
 						</div>
 					</div>
-				</div>
-
 			</div>
 
-			<div class="pure-g">
-
-				<div class="project bench-app pure-u-md-3-5 pure-u-1">
+			<div class="project-container">
+				<div class="project bench-app app-image">
 				</div>
-
-				<div class="pure-u-md-2-5 pure-u-1">
 					<div class="project-info">
 						<h1>Danish Bench</h1>
+						<h4 class="bench-subheading">Not a virtual bench</h4>
 						<ul>
 							<li>I refactored donated mahogany lumber for this Danish / Japanese style bench.</li>
 							<li>Danish cording is used throughout the application to enable users to "sit down".</li> 
 						</ul>
 					</div>
-				</div>
-
 			</div>
 
 		</div> <!-- closes main-content -->
 
-		<footer>
+		<footer id="contact">
 			<div class="pure-g">
 				<div class="footer-inner pure-u-1 pure-u-md-1-3">
 					<div><h3>Stuff I love</h3></div>
@@ -171,7 +199,7 @@
 				<div class="footer-inner pure-u-1 pure-u-md-1-3">
 					<div><h3>Get in touch</h3></div>
 					<div>
-						<a href="http://theperfectfuel.com/contact-us" target="_blank">
+						<a href="https://www.linkedin.com/in/robert-wilson/" target="_blank">
 							<img src="img/The-Perfect-Fuel-Logo.png">
 						</a>
 					</div>
@@ -189,5 +217,28 @@
 
 	</div> <!-- close main-container -->
 	
+
+
+	<script>
+
+		// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+	</script>
 </body>
 </html>

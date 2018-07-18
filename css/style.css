@@ -27,15 +27,50 @@ footer h3 {
 	padding-top: 2em;
 }
 
-.pure-g {
-	margin-bottom: 10px;
-	padding: 20px 0 10px 0;
-	border-bottom: 1px solid #ddd;
-}
-
 footer .pure-g {
 	border-bottom: none;
 }
+
+.id-padding {
+	padding-bottom: 1px;
+}
+
+
+
+
+
+/* Styles for the sticky navbar */
+#navbar {
+	overflow: hidden;
+	background-color: #333;
+	z-index: 99999;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+  .sticky + .content {
+	padding-top: 60px;
+  }
+
+
+
+
+
 
 a {
 	outline: 0;
@@ -44,6 +79,23 @@ a {
 
 a:link {
 	text-decoration: none;
+}
+
+.btn {
+	padding: 8px;
+	margin: 5px;
+	font-size: 18px;
+	border: none;
+	border-radius: 3px;
+	width: 80px;
+}
+
+.btn-site {
+	background-color: #1E88E5;
+}
+
+.btn-code {
+	background-color: #e53935;
 }
 
 #main-content {
@@ -84,8 +136,17 @@ a:link {
     background-position: left top;
 }
 
+.app-image {
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 .beer-app {
-	background-image:url('../img/beer-app2.jpg');
+	background-image:url('../img/beer-app2.gif');
+}
+
+.story-app {
+	background-image: url('../img/really-small-stories.gif');
 }
 
 .music-app {
@@ -98,21 +159,32 @@ a:link {
 }
 
 .quiz-app {
-	background-image:url('../img/hockey-quiz.jpg');
+	background-image:url('../img/hockey-quiz.gif');
 	background-position: center;
 }
 
 .pinstruments-app {
-	background-image:url('../img/pinstruments-app2.jpg');
-	background-position: center top;
+	background-image:url('../img/pinstruments-app2.gif');
+	background-position: center;
 }
 
 .bench-app {
-	background-image:url('../img/danish-bench1.jpg');
+	background-image:url('../img/danish-bench1.gif');
 }
 
-.bio-container {
+.bench-subheading {
+	color: #888;
+	text-align: center;
+	font-size: 14px;
+}
+
+.bio-container, .project-container {
 	position: relative;
+}
+
+.project-container {
+	padding: 20px;
+	margin: 5em auto;
 }
 
 .bio-heading {
@@ -155,22 +227,16 @@ a:link {
 	font-weight: 400;
 }
 
-.project .project-info {
-	height: 80%;
-	width: 80%;
+.project-info {
+	width: 60%;
 	padding: .5em;
 	margin: 1em auto;
-	background-color: black;
-	background-position: center center;
 	color: black;
 	font-size: 1.2em;
 	line-height: 1.2em;
-	opacity: 1;
 }
 
-.project-info > ul {
-	padding: 0 1em 0 2em;
-}
+
 
 .project-info >ul li {
 	padding-bottom: 8px;
@@ -188,7 +254,7 @@ a:link {
 .project-links a:hover {
 	border-bottom: 1px solid black;
 	margin-bottom: -1px;
-	color: green;
+	color: white;
 	font-weight: 500;
 }
 
@@ -205,9 +271,6 @@ a:link {
 }
 
 @media (max-width: 760px) {
-	.pure-g {
-		letter-spacing: normal;
-	}
 
 	header {
 		min-height: 16em;
@@ -215,6 +278,10 @@ a:link {
 
 	.project h1 {
 		font-size: 1.3em;
+	}
+
+	.project-info {
+		width: 80%;
 	}
 
 	.project-links a {
@@ -240,4 +307,9 @@ a:link {
 	header {
 		min-height: 12em;
 	}
+
+	.project-info {
+		width: 80%;
+	}
+
 }
