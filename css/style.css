@@ -10,7 +10,7 @@ body {
 }
 
 header {
-	min-height: 34em;
+	min-height: 33em;
 }
 
 footer {
@@ -111,11 +111,34 @@ a:link {
 	background-image:url('../img/danish-bench1.jpg');
 }
 
+.bio-container {
+	position: relative;
+}
+
+.bio-heading {
+	text-align: center;
+	font-size: 2.3em;
+	margin: 2.2em 0 2em 0;
+	border-bottom: 1px solid #ddd;
+	color: #1E88E5;
+}
+
+.bio-info {
+	width: 80%;
+	padding: .5em;
+	margin: 1em auto;
+	color: black;
+	font-size: 1.2em;
+	line-height: 1.2em;
+	text-align: center;
+}
+
 .project-heading {
 	text-align: center;
 	font-size: 2.3em;
 	margin: 2.2em 0 2em 0;
 	border-bottom: 1px solid #ddd;
+	color: #e53935;
 }
 
 .project {
@@ -169,9 +192,25 @@ a:link {
 	font-weight: 500;
 }
 
+@media (min-width: 1400px) {
+	header {
+		min-height: 39em;
+	}
+}
+
+@media (max-width: 1024px) {
+	header {
+		min-height: 22em;
+	}
+}
+
 @media (max-width: 760px) {
 	.pure-g {
 		letter-spacing: normal;
+	}
+
+	header {
+		min-height: 16em;
 	}
 
 	.project h1 {
@@ -195,4 +234,10 @@ a:link {
 		line-height: 1.1em;
 	}
 
+}
+
+@media (max-width: 480px) {
+	header {
+		min-height: 12em;
+	}
 }
